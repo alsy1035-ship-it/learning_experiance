@@ -1,0 +1,80 @@
+body{margin: 0%; }
+
+h1{font-size: 4rem;}
+.container{
+background-image: url("5471985.jpg");
+margin: 0%;
+height: 100vh;
+display: flex;
+text-align: center;
+flex-direction: column;
+background-size: cover; /* Scales the image to cover the entire container */
+background-position: center center; /* Centers the image */
+background-repeat: no-repeat; /* Prevents image repetition */
+background-attachment: fixed; /* Keeps the image fixed in the background during scroll */
+width: 100vw; /* Ensures the body takes up the full viewport width */
+}
+
+input{
+    background-color: hsl(179, 100%, 87%);
+    font-size: 2rem;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+}
+.buttons{
+
+font-size: 2rem;
+border-radius: 5px;
+border: none;
+padding: 10px 20px;
+color:black;
+background-color: hsl(0, 68%, 61%);
+transition: background-color .25s;
+
+}
+.buttons:hover{ background-color: hsl(0, 74%, 52%);  scale: 1.1; cursor: pointer; }
+.buttons:active{ scale: 0.95;}
+.ul{  
+
+  align-items: center;
+  overflow-y: auto;     
+  width: 80%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.2); /* optional for readability */
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin: 10px auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+  flex-direction: column;
+}
+.tasklist{
+  display: flex;
+  justify-content: space-between; /* text left, buttons right */
+  width: 80%;           /* row width */
+  max-width: 600px;     /* optional */
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: hsl(0, 0%, 90%,0.2);
+}
+.list{
+    overflow-wrap: break-word;
+     display: flex;
+  justify-content: space-between; /* text left, buttons right */
+ flex: 1; 
+ text-align: left;}
+
+.delbutton,.movebut{
+padding: 8px 15px;
+  font-size: 1rem;       /* visible text/icons */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+   margin-left: 10px;
+
+}
+.delbutton{  background-color:  hsl(0, 68%, 61%);}
+.delbutton:hover { background-color: hsl(0, 74%, 52%);}
+.movebut{  background-color: hsl(179, 89%, 82%);}
+.movebut:hover{ background-color: hsl(179, 48%, 76%);}
