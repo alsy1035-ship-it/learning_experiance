@@ -28,3 +28,7 @@ things i learned today:
 
 Today i learned the onchange Eventhandler and learned that i can pass variables to my css module from my component
 
+
+🕳 Day 8: made a broken todolist mostly beacuse i was just following chatgpt instead of making it my self
+
+🕳 Day 9: deleted all the css from chatgpt and started making the app myself, eventully i was apple to finish it now it looks like a todolist app aslong as nobody types more than 50 words
