@@ -16,10 +16,13 @@ setuptask(event.target.value);
 }
 function addtask()
 {
+if(updatetaskbar === ""){window.alert("pls enter a valid task not an empty string")}
+else{
 
 const newtaksbar = updatetaskbar ;
 
 settask([...taskbar , newtaksbar] );
+}
 
 }
 
@@ -62,17 +65,17 @@ return(
 <button className={Stlyes.buttons} onClick={addtask}>Add..</button>
 </div>
 
-<ol className={Stlyes.ul}>
+<ul className={Stlyes.ul}>
 
-{taskbar.map((task , index) => <div key={index} className={Stlyes.tasklist}>
-                                        <li  className={Stlyes.list}>{task}</li>
+{taskbar.map((task , index) => <div key={index} className={Stlyes.taskdiv}>
+                                        <li  className={Stlyes.list}>{task}
                                         <div><button  onClick={() => deletetask(index)} className={Stlyes.delbutton}>delete</button>
                                         <button  onClick={()=>moveUp(index)} className={Stlyes.movebut}>⬆</button> 
-                                        <button  onClick={()=>moveDown(index)}className={Stlyes.movebut}>⬇</button></div>
+                                        <button  onClick={()=>moveDown(index)}className={Stlyes.movebut}>⬇</button></div></li>
                                       </div>   
                                       )}
 
-</ol>
+</ul>
 
 
 </div>

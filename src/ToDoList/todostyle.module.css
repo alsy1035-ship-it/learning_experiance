@@ -35,46 +35,56 @@ transition: background-color .25s;
 }
 .buttons:hover{ background-color: hsl(0, 74%, 52%);  scale: 1.1; cursor: pointer; }
 .buttons:active{ scale: 0.95;}
-.ul{  
 
-  align-items: center;
-  overflow-y: auto;     
-  width: 80%;
-  max-width: 400px;
-  background: rgba(255, 255, 255, 0.2); /* optional for readability */
-  border-radius: 8px;
-  padding: 10px 15px;
-  margin: 10px auto;
-  font-size: 1.5rem;
-  font-weight: bold;
-  flex-direction: column;
+.ul{
+overflow-y: auto;
+align-self: center;
+background-color: hsl(0, 0%, 50%,0.5);
+max-width: 500px;
+width: 500px;
+margin-top: 15px;
+padding: 5px 10px;
+border: none;
+border-radius: 15px;
+list-style-type: none;
+
 }
-.tasklist{
-  display: flex;
-  justify-content: space-between; /* text left, buttons right */
-  width: 80%;           /* row width */
-  max-width: 600px;     /* optional */
-  padding: 10px 15px;
-  border-radius: 8px;
-  background-color: hsl(0, 0%, 90%,0.2);
-}
+
 .list{
-    overflow-wrap: break-word;
-     display: flex;
-  justify-content: space-between; /* text left, buttons right */
- flex: 1; 
- text-align: left;}
-
+  overflow-wrap: break-word ;
+  max-width: 75%;
+  width: 75%;
+  height: 50px;
+display: inline-block;
+flex: content;
+padding: 18px 25px;
+border: 1px groove hsla(0, 0%, 80%, 0.5);
+background-color:hsla(0, 0%, 91%, 0.5) ;
+border-radius: 10px;
+margin: 15px;
+font-family: sans-serif;
+}
 .delbutton,.movebut{
-padding: 8px 15px;
-  font-size: 1rem;       /* visible text/icons */
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-   margin-left: 10px;
+
+padding: 10px 15px;
+border: none;
+border-radius: 15px;
+margin-top: 5px;
+}
+.delbutton{
+
+background-color: hsla(231, 44%, 50%, 0.4);
+margin-right: 6px;
+}
+.delbutton:hover{
+  background-color: hsla(231, 44%, 60%, 0.4);
+}
+.delbutton:active{ scale: 0.9 ;}
+
+.movebut{
+background-color: hsl(179, 41%, 73%);
+margin-left: 5px;
 
 }
-.delbutton{  background-color:  hsl(0, 68%, 61%);}
-.delbutton:hover { background-color: hsl(0, 74%, 52%);}
-.movebut{  background-color: hsl(179, 89%, 82%);}
-.movebut:hover{ background-color: hsl(179, 48%, 76%);}
+.movebut:hover{ background-color: hsl(179, 41%, 80%);}
+.movebut:active{ scale: 0.9 ;}
